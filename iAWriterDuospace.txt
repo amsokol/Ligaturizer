@@ -1,0 +1,9 @@
+fontforge -lang py -script ligaturize.py ./fonts/ia-writer/mono/iAWriterMonoS-Regular.ttf --output-dir=./fonts/output
+
+fontforge -lang py -script ligaturize.py \
+    ./fonts/ia-writer/duospace/iAWriterDuospace-Regular.ttf \
+    --output-dir=./fonts/output \
+    --output-name='iA Writer Mono Duospace Liga' \
+    --prefix=''
+
+fontforge -lang py -script ligaturize.py --help

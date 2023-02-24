@@ -1,31 +1,31 @@
-## This is the master list of ligatures that ligaturize.py will attempt to copy
-## from Fira Code to your output font. Ligatures that aren't present in the
-## version of Fira Code you're using will be skipped.
-## To disable ligatures, simply comment them out in this file.
+# This is the master list of ligatures that ligaturize.py will attempt to copy
+# from Fira Code to your output font. Ligatures that aren't present in the
+# version of Fira Code you're using will be skipped.
+# To disable ligatures, simply comment them out in this file.
 ligatures = [
     {
-        ## These are all the punctuation characters used in Fira Code ligatures.
-        ## Use the `--copy-character-glyphs` option to copy these into the output
-        ## font along with the ligatures themselves.
+        # These are all the punctuation characters used in Fira Code ligatures.
+        # Use the `--copy-character-glyphs` option to copy these into the output
+        # font along with the ligatures themselves.
         'chars': [
-            ## These characters generally look good in most fonts and are
-            ## enabled by default if you use `--copy-character-glyphs`.
+            # These characters generally look good in most fonts and are
+            # enabled by default if you use `--copy-character-glyphs`.
             'ampersand', 'asciicircum', 'asciitilde', 'asterisk',
             'backslash', 'bar',
             'colon', 'equal', 'exclam', 'greater', 'hyphen',
             'less', 'numbersign', 'percent', 'period', 'plus',
             'question', 'semicolon', 'slash', 'underscore',
 
-            ## These characters are also used by the ligatures, but are likely
-            ## to look more out of place when spliced into another font.
+            # These characters are also used by the ligatures, but are likely
+            # to look more out of place when spliced into another font.
             # 'at', 'braceleft', 'braceright', 'bracketleft', 'bracketright',
             # 'dollar', 'parenleft', 'parenright', 'underscore', 'w'
         ],
         'firacode_ligature_name': None,
     },
-    ## These are traditional (i.e. present in most variable-width fonts)
-    ## aesthetic ligatures. They are commented out here so that they don't
-    ## overwrite similar ligatures present in the destination font.
+    # These are traditional (i.e. present in most variable-width fonts)
+    # aesthetic ligatures. They are commented out here so that they don't
+    # overwrite similar ligatures present in the destination font.
     # {   # Fl
     #     'chars': ['F', 'l'],
     #     'firacode_ligature_name': 'F_l.liga',
@@ -50,7 +50,7 @@ ligatures = [
     #     'chars': ['f', 't'],
     #     'firacode_ligature_name': 'f_t.liga',
     # },
-    ## Programming ligatures begin here.
+    # Programming ligatures begin here.
     {   # &&
         'chars': ['ampersand', 'ampersand'],
         'firacode_ligature_name': 'ampersand_ampersand.liga',
@@ -151,18 +151,18 @@ ligatures = [
         'chars': ['bar', 'hyphen', 'greater'],
         'firacode_ligature_name': 'bar_hyphen_greater.liga',
     },
-    {   # {|
-        'chars': ['braceleft', 'bar'],
-        'firacode_ligature_name': 'braceleft_bar.liga',
-    },
-    {   # [|
-        'chars': ['bracketleft', 'bar'],
-        'firacode_ligature_name': 'bracketleft_bar.liga',
-    },
-    {   # ]#
-        'chars': ['bracketright', 'numbersign'],
-        'firacode_ligature_name': 'bracketright_numbersign.liga',
-    },
+    #    {   # {|
+    #        'chars': ['braceleft', 'bar'],
+    #        'firacode_ligature_name': 'braceleft_bar.liga',
+    #    },
+    #    {   # [|
+    #        'chars': ['bracketleft', 'bar'],
+    #        'firacode_ligature_name': 'bracketleft_bar.liga',
+    #    },
+    #    {   # ]#
+    #        'chars': ['bracketright', 'numbersign'],
+    #        'firacode_ligature_name': 'bracketright_numbersign.liga',
+    #    },
     {   # ::
         'chars': ['colon', 'colon'],
         'firacode_ligature_name': 'colon_colon.liga',
@@ -451,14 +451,14 @@ ligatures = [
         'chars': ['less', 'slash', 'greater'],
         'firacode_ligature_name': 'less_slash_greater.liga',
     },
-    {   # #{
-        'chars': ['numbersign', 'braceleft'],
-        'firacode_ligature_name': 'numbersign_braceleft.liga',
-    },
-    {   # #[
-        'chars': ['numbersign', 'bracketleft'],
-        'firacode_ligature_name': 'numbersign_bracketleft.liga',
-    },
+    #    {   # #{
+    #        'chars': ['numbersign', 'braceleft'],
+    #        'firacode_ligature_name': 'numbersign_braceleft.liga',
+    #    },
+    #    {   # #[
+    #        'chars': ['numbersign', 'bracketleft'],
+    #        'firacode_ligature_name': 'numbersign_bracketleft.liga',
+    #    },
     {   # #:
         'chars': ['numbersign', 'colon'],
         'firacode_ligature_name': 'numbersign_colon.liga',
@@ -483,10 +483,10 @@ ligatures = [
         'chars': ['numbersign', 'numbersign', 'numbersign', 'numbersign'],
         'firacode_ligature_name': 'numbersign_numbersign_numbersign_numbersign.liga',
     },
-    {   # #(
-        'chars': ['numbersign', 'parenleft'],
-        'firacode_ligature_name': 'numbersign_parenleft.liga',
-    },
+    #    {   # #(
+    #        'chars': ['numbersign', 'parenleft'],
+    #        'firacode_ligature_name': 'numbersign_parenleft.liga',
+    #    },
     {   # #?
         'chars': ['numbersign', 'question'],
         'firacode_ligature_name': 'numbersign_question.liga',

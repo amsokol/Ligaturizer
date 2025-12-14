@@ -10,11 +10,26 @@ ligatures = [
         'chars': [
             ## These characters generally look good in most fonts and are
             ## enabled by default if you use `--copy-character-glyphs`.
-            'ampersand', 'asciicircum', 'asciitilde', 'asterisk',
-            'backslash', 'bar',
-            'colon', 'equal', 'exclam', 'greater', 'hyphen',
-            'less', 'numbersign', 'percent', 'period', 'plus',
-            'question', 'semicolon', 'slash', 'underscore',
+            # 'ampersand',
+            # 'asciicircum',
+            # 'asciitilde', 
+            # 'asterisk',
+            # 'backslash', 
+            # 'bar',
+            # 'colon', 
+            # 'equal', 
+            # 'exclam', 
+            # 'greater', 
+            # 'hyphen',
+            # 'less', 
+            # 'numbersign', 
+            # 'percent', 
+            # 'period', 
+            # 'plus',
+            # 'question', 
+            # 'semicolon', 
+            # 'slash', 
+            # 'underscore',
 
             ## These characters are also used by the ligatures, but are likely
             ## to look more out of place when spliced into another font.
@@ -51,10 +66,10 @@ ligatures = [
     #     'firacode_ligature_name': 'f_t.liga',
     # },
     ## Programming ligatures begin here.
-    {   # &&
-        'chars': ['ampersand', 'ampersand'],
-        'firacode_ligature_name': 'ampersand_ampersand.liga',
-    },
+    # {   # &&
+    #     'chars': ['ampersand', 'ampersand'],
+    #     'firacode_ligature_name': 'ampersand_ampersand.liga',
+    # },
     {   # ^=
         'chars': ['asciicircum', 'equal'],
         'firacode_ligature_name': 'asciicircum_equal.liga',
@@ -83,10 +98,10 @@ ligatures = [
         'chars': ['asciitilde', 'hyphen'],
         'firacode_ligature_name': 'asciitilde_hyphen.liga',
     },
-    {   # **
-        'chars': ['asterisk', 'asterisk'],
-        'firacode_ligature_name': 'asterisk_asterisk.liga',
-    },
+    # {   # **
+    #     'chars': ['asterisk', 'asterisk'],
+    #     'firacode_ligature_name': 'asterisk_asterisk.liga',
+    # },
     {   # ***
         'chars': ['asterisk', 'asterisk', 'asterisk'],
         'firacode_ligature_name': 'asterisk_asterisk_asterisk.liga',
@@ -123,14 +138,14 @@ ligatures = [
         'chars': ['bar', 'bar', 'hyphen'],
         'firacode_ligature_name': 'bar_bar_hyphen.liga',
     },
-    {   # |}
-        'chars': ['bar', 'braceright'],
-        'firacode_ligature_name': 'bar_braceright.liga',
-    },
-    {   # |]
-        'chars': ['bar', 'bracketright'],
-        'firacode_ligature_name': 'bar_bracketright.liga',
-    },
+    # {   # |}
+    #     'chars': ['bar', 'braceright'],
+    #     'firacode_ligature_name': 'bar_braceright.liga',
+    # },
+    # {   # |]
+    #     'chars': ['bar', 'bracketright'],
+    #     'firacode_ligature_name': 'bar_bracketright.liga',
+    # },
     {   # |=
         'chars': ['bar', 'equal'],
         'firacode_ligature_name': 'bar_equal.liga',
@@ -151,14 +166,14 @@ ligatures = [
         'chars': ['bar', 'hyphen', 'greater'],
         'firacode_ligature_name': 'bar_hyphen_greater.liga',
     },
-    {   # {|
-        'chars': ['braceleft', 'bar'],
-        'firacode_ligature_name': 'braceleft_bar.liga',
-    },
-    {   # [|
-        'chars': ['bracketleft', 'bar'],
-        'firacode_ligature_name': 'bracketleft_bar.liga',
-    },
+    # {   # {|
+    #     'chars': ['braceleft', 'bar'],
+    #     'firacode_ligature_name': 'braceleft_bar.liga',
+    # },
+    # {   # [|
+    #     'chars': ['bracketleft', 'bar'],
+    #     'firacode_ligature_name': 'bracketleft_bar.liga',
+    # },
     {   # ]#
         'chars': ['bracketright', 'numbersign'],
         'firacode_ligature_name': 'bracketright_numbersign.liga',
@@ -451,10 +466,10 @@ ligatures = [
         'chars': ['less', 'slash', 'greater'],
         'firacode_ligature_name': 'less_slash_greater.liga',
     },
-    {   # #{
-        'chars': ['numbersign', 'braceleft'],
-        'firacode_ligature_name': 'numbersign_braceleft.liga',
-    },
+    # {   # #{
+    #     'chars': ['numbersign', 'braceleft'],
+    #     'firacode_ligature_name': 'numbersign_braceleft.liga',
+    # },
     {   # #[
         'chars': ['numbersign', 'bracketleft'],
         'firacode_ligature_name': 'numbersign_bracketleft.liga',
@@ -499,10 +514,10 @@ ligatures = [
         'chars': ['numbersign', 'underscore', 'parenleft'],
         'firacode_ligature_name': 'numbersign_underscore_parenleft.liga',
     },
-    {   # %%
-        'chars': ['percent', 'percent'],
-        'firacode_ligature_name': 'percent_percent.liga',
-    },
+    # {   # %%
+    #     'chars': ['percent', 'percent'],
+    #     'firacode_ligature_name': 'percent_percent.liga',
+    # },
     {   # .=
         'chars': ['period', 'equal'],
         'firacode_ligature_name': 'period_equal.liga',
@@ -511,22 +526,22 @@ ligatures = [
         'chars': ['period', 'hyphen'],
         'firacode_ligature_name': 'period_hyphen.liga',
     },
-    {   # ..
-        'chars': ['period', 'period'],
-        'firacode_ligature_name': 'period_period.liga',
-    },
+    # {   # ..
+    #     'chars': ['period', 'period'],
+    #     'firacode_ligature_name': 'period_period.liga',
+    # },
     {   # ..=
         'chars': ['period', 'period', 'equal'],
         'firacode_ligature_name': 'period_period_equal.liga',
     },
-    {   # ..<
-        'chars': ['period', 'period', 'less'],
-        'firacode_ligature_name': 'period_period_less.liga',
-    },
-    {   # ...
-        'chars': ['period', 'period', 'period'],
-        'firacode_ligature_name': 'period_period_period.liga',
-    },
+    # {   # ..<
+    #     'chars': ['period', 'period', 'less'],
+    #     'firacode_ligature_name': 'period_period_less.liga',
+    # },
+    # {   # ...
+    #     'chars': ['period', 'period', 'period'],
+    #     'firacode_ligature_name': 'period_period_period.liga',
+    # },
     {   # .?
         'chars': ['period', 'question'],
         'firacode_ligature_name': 'period_question.liga',

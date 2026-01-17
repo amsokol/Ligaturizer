@@ -248,20 +248,24 @@ def update_font_metadata(font, new_name):
     replace_sfnt(font, 'WWS Family', new_name)
 
 def ligaturize_font(input_font_file, output_dir, ligature_font_file,
-                    output_name, prefix, **kwargs):
+                    output_name, prefix, preserve_metadata=False, **kwargs):
     font = fontforge.open(input_font_file)
 
     if not ligature_font_file:
         ligature_font_file = get_ligature_source(font.fontname)
 
-    if output_name:
-        name = output_name
+    if preserve_metadata:
+        print("Ligaturizing font %s (preserving original metadata)" % path.basename(font.path))
+        font.copyright = (font.copyright or '') + COPYRIGHT
     else:
-        name = font.familyname
-    if prefix:
-        name = "%s %s" % (prefix, name)
+        if output_name:
+            name = output_name
+        else:
+            name = font.familyname
+        if prefix:
+            name = "%s %s" % (prefix, name)
 
-    update_font_metadata(font, name)
+        update_font_metadata(font, name)
 
     print('    ...using ligatures from %s' % ligature_font_file)
     firacode = fontforge.open(ligature_font_file)
@@ -327,6 +331,10 @@ def parse_args():
     parser.add_argument("--output-name",
         type=str, default="",
         help="Name of the generated font. Completely replaces the original.")
+    parser.add_argument("--preserve-metadata",
+        default=False, action='store_true',
+        help="Preserve the original font name, id, version and other metadata."
+             " Only the copyright will be updated to credit FiraCode ligatures.")
     return parser.parse_args()
 
 def main():
